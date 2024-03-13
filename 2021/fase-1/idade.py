@@ -2,11 +2,17 @@ irma1 = int(input())
 irma2 = int(input())
 irma3 = int(input())
 
-if irma1 < irma2 and irma3 < irma2: 
-  print(irma3)
+lista = [irma3, irma2, irma1]
 
-elif irma1 < irma2 and irma3 > irma2:
-  print(irma2)
+lista.sort(reverse=True)
 
-elif irma1 == irma2 and irma2 == irma3:
-  print(irma1)
+if irma1 > irma2 and irma1 > irma3: 
+  up = irma1
+
+elif irma2 < irma2 and irma3 > irma2:
+  up = irma2
+
+else:
+  up = 3
+
+print(sorted(lista)[-2])
