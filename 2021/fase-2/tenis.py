@@ -1,8 +1,8 @@
-a = int(input()) 
-b = int(input()) 
-c = int(input())
-d = int(input())
+tenis = []
 
-calc = d - c - b + a
+for i in range(4):
+  tenis.append(int(input()))
 
-print(calc)
+tenis.sort()
+
+print(abs((tenis[3]+tenis[0]) - (tenis[2]+tenis[1]))) 
