@@ -12,3 +12,4 @@ elif count == 1 or count == 2:
   print("3")
 else: 
   print("-1")
+  
